@@ -29,9 +29,16 @@ dependencies = [
 
 [project.scripts]
 swizzle = "swizzle.cli:main"
+swizzle-ai = "swizzle.cli:main"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
 
 [project.urls]
 Homepage = "https://swizzle-ten.vercel.app"
-Repository = "https://github.com/Paramveersingh-S/Swizzle"
-Documentation = "https://swizzle-ten.vercel.app/agents/quickstart.md"
+Repository = "https://github.com/Swizzle-AI/swizzle-python-sdk"
+Documentation = "https://github.com/Swizzle-AI/swizzle-python-sdk#readme"
 
