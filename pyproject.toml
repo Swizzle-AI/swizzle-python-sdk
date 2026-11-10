@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swizzle-ai"
+version = "0.2.0"
+description = "Official Python SDK & Student CLI for Swizzle: Sub-40ms LLM TTFT, 60Hz Robotics VLA (PatchCache, SpecAct, Teleop), and Batched Latent World-Model MPC."
+readme = "README.md"
+authors = [{ name = "Paramveer Singh", email = "param15.veer.singh@gmail.com" }]
+license = { text = "Apache-2.0" }
+keywords = ["llm", "inference", "speculative-decoding", "prefix-caching", "vllm", "agents", "swizzle"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.24.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+swizzle = "swizzle.cli:main"
+
+[project.urls]
+Homepage = "https://swizzle-ten.vercel.app"
+Repository = "https://github.com/Paramveersingh-S/Swizzle"
+Documentation = "https://swizzle-ten.vercel.app/agents/quickstart.md"
+
